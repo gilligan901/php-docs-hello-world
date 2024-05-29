@@ -1,3 +1,8 @@
 <?php
+$db = new SQLite3('mydatabase.db');
 
-echo "this is something else!";
+$results = $db->query('SELECT * FROM users');
+while ($row = $results->fetchArray()) {
+    var_dump($row);
+}
+?>
