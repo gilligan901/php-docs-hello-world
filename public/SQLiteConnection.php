@@ -5,7 +5,7 @@ class SQLiteConnection {
     public function connect() {
         if ($this->pdo == null) {
             try {
-                $this->pdo = new SQLite3('mydatabase.db', SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE);
+                $this->pdo = new SQLite3('/home/site/wwwroot/mydatabase.db', SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE);
             } catch (Exception $e) {
                 // Handle exception
             }
