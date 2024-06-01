@@ -15,4 +15,4 @@ if ($pdo != null) {
     }
 } else {
     echo 'Whoops, could not connect to the SQLite database!';
-    }
+}
